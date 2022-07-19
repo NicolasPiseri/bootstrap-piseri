@@ -196,13 +196,13 @@ a {
 }
 .contenedor .widget-1 {
   grid-area: widget-1;
-  background-image: url(../../img/bitcoin_widget.jpg);
+  background-image: url(../img/bitcoin_widget.jpg);
   background-size: cover;
   background-position: center;
 }
 .contenedor .widget-2 {
   grid-area: widget-2;
-  background-image: url(../../img/ethereum.jpg);
+  background-image: url(../img/ethereum.jpg);
   background-size: cover;
   background-position: center;
 }
