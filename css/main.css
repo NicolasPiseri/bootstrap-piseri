@@ -31,7 +31,7 @@ a {
 .contenedor .header h1 a {
   color: #ff9900;
   font-size: 2rem;
-  font-weight: 800;
+  font-weight: 600;
 }
 .contenedor .header nav {
   width: 80%;
@@ -335,8 +335,10 @@ form .motivo input, form .motivo label {
 @media screen and (max-width: 992px) {
   .contenedor {
     grid-template-areas: "header header header header" "contenido contenido contenido contenido" "sidebar sidebar sidebar sidebar" "widget-1 widget-1 widget-2 widget-2" "footer footer footer footer";
+    width: 98%;
   }
   .contenedor .sidebar h3 {
+    font-size: 1.5rem;
     margin-bottom: 1rem;
   }
   .contenedor .sidebar .section {
@@ -404,6 +406,25 @@ form .motivo input, form .motivo label {
   }
 }
 @media screen and (max-width: 576px) {
+  .contenedor {
+    grid-template-areas: "header header header header" "contenido contenido contenido contenido" "sidebar sidebar sidebar sidebar" "widget-1 widget-1 widget-1 widget-1" "widget-2 widget-2 widget-2 widget-2" "footer footer footer footer";
+    width: 100%;
+  }
+  .contenedor .header nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenedor .header nav ul li {
+    margin: 5px 0;
+  }
+  .contenedor .sidebar .section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+  }
   .contenedor-articulos .contenido {
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(7, auto);

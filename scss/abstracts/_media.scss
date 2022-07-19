@@ -6,9 +6,11 @@
         "sidebar sidebar sidebar sidebar"
         "widget-1 widget-1 widget-2 widget-2"
         "footer footer footer footer";
+        width: 98%;
     }
     .contenedor .sidebar {
         h3 {
+            font-size: 1.5rem;
             margin-bottom: 1rem;
         }
         .section {
@@ -73,6 +75,34 @@
 }
 
 @media screen and (max-width: 576px) {
+    .contenedor {
+        grid-template-areas:
+        "header header header header"
+        "contenido contenido contenido contenido"
+        "sidebar sidebar sidebar sidebar"
+        "widget-1 widget-1 widget-1 widget-1"
+        "widget-2 widget-2 widget-2 widget-2"
+        "footer footer footer footer";
+        width: 100%;
+        .header {
+            nav{
+                ul{
+                    @include d-flex (column,center,center);
+                    li {
+                        margin: 5px 0;
+                    }
+                }
+            }
+        }
+        .sidebar {
+            .section {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                gap: 10px;
+            }
+        }
+    }
     .contenedor-articulos {
         .contenido {
             grid-template-columns: repeat(1, 1fr);
@@ -87,4 +117,5 @@
             "articulo-6";
         }
     }
+
 }
