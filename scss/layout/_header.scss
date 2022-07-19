@@ -1,11 +1,11 @@
 .contenedor .header {
-    background: #181818;
+    background: $color-principal;
     color: #fff;
     grid-area: header;
     @include d-flex (row,space-between,center);
     h1 {
         a {
-            color: #ff9900;
+            color: $color-terciario;
             font-size: 2rem;
             font-weight: 800;
         }

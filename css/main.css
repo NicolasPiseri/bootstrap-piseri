@@ -176,7 +176,6 @@ a {
 }
 .contenedor .widget-1, .contenedor .widget-2 {
   transition: all 0.3s ease-in-out;
-  background: #55a8fd;
   color: #fff;
   height: 100%;
   min-height: 100px;
@@ -287,7 +286,7 @@ form textarea {
   min-width: 100%;
 }
 form #boton {
-  background: #282828;
+  background: #272727;
   color: #fff;
   transition: all 0.2s ease-in-out;
   padding: 1rem 0;
