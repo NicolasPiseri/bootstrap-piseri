@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .contenedor {
     .header {
         background: $color-principal;
@@ -11,6 +12,18 @@
                 font-size: 2rem;
                 font-weight: 600;
             }
+=======
+.contenedor .header {
+    background: $color-principal;
+    color: #fff;
+    grid-area: header;
+    @include d-flex (row,space-between,center);
+    h1 {
+        a {
+            color: $color-terciario;
+            font-size: 2rem;
+            font-weight: 600;
+>>>>>>> 3521484b1a9bc13109e8674f4ff7d4ba60da4275
         }
 
         nav {

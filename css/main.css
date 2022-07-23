@@ -193,7 +193,12 @@ a {
 .contenedor .widget-1,
 .contenedor .widget-2 {
   transition: all 0.3s ease-in-out;
+<<<<<<< HEAD
   height: auto;
+=======
+  color: #fff;
+  height: 100%;
+>>>>>>> 3521484b1a9bc13109e8674f4ff7d4ba60da4275
   min-height: 100px;
   text-align: center;
   display: flex;
@@ -355,12 +360,23 @@ form .motivo input, form .motivo label {
   font-weight: 600;
 }
 
+<<<<<<< HEAD
 @media screen and (min-width: 576px) {
   .contenedor .header {
     padding: 1rem;
   }
   .contenedor .header nav {
     width: 55%;
+=======
+@media screen and (max-width: 992px) {
+  .contenedor {
+    grid-template-areas: "header header header header" "contenido contenido contenido contenido" "sidebar sidebar sidebar sidebar" "widget-1 widget-1 widget-2 widget-2" "footer footer footer footer";
+    width: 98%;
+  }
+  .contenedor .sidebar h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+>>>>>>> 3521484b1a9bc13109e8674f4ff7d4ba60da4275
   }
   .contenedor .header nav ul {
     display: flex;
@@ -458,6 +474,7 @@ form .motivo input, form .motivo label {
     transform: scale(1.025);
   }
 }
+<<<<<<< HEAD
 @media screen and (min-width: 1200px) {
   body {
     background-color: #272727;
@@ -466,6 +483,32 @@ form .motivo input, form .motivo label {
 @media screen and (min-width: 1400px) {
   body {
     background-color: #272727;
+=======
+@media screen and (max-width: 576px) {
+  .contenedor {
+    grid-template-areas: "header header header header" "contenido contenido contenido contenido" "sidebar sidebar sidebar sidebar" "widget-1 widget-1 widget-1 widget-1" "widget-2 widget-2 widget-2 widget-2" "footer footer footer footer";
+    width: 100%;
+  }
+  .contenedor .header nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .contenedor .header nav ul li {
+    margin: 5px 0;
+  }
+  .contenedor .sidebar .section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+  }
+  .contenedor-articulos .contenido {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(7, auto);
+    grid-template-areas: "subtitle" "articulo-1" "articulo-2" "articulo-3" "articulo-4" "articulo-5" "articulo-6";
+>>>>>>> 3521484b1a9bc13109e8674f4ff7d4ba60da4275
   }
 }
 

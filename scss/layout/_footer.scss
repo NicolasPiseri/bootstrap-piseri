@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .contenedor {
     .footer {
         padding: 0 2rem;
@@ -11,5 +12,14 @@
             font-size: 1rem;
             font-weight: 600;
         }
+=======
+.contenedor .footer {
+    background: $color-principal;
+    color: #fff;
+    grid-area: footer;
+    a {
+        font-size: 1rem;
+        font-weight: 600;
+>>>>>>> 3521484b1a9bc13109e8674f4ff7d4ba60da4275
     }
 }
